@@ -2,7 +2,7 @@ package condicionalesUnidad2;
 
 import java.util.Scanner; //importar Scanner
 
-public class numeroCapicua_01 {
+public class E01_numeroCapicua {
 
     public static void main(String[] args) {
 

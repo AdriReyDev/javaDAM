@@ -2,7 +2,7 @@ package condicionalesUnidad2;
 
 import java.util.Scanner;
 
-public class dni {
+public class E02_dni {
 
     public static void main(String[] args) {
 
