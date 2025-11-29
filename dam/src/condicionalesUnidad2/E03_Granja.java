@@ -24,7 +24,7 @@ public class E03_Granja {
 
         double racion = (kgNecesarios - comidaDiaria) / numAnimales;
 
-        if (comidaDiaria < kgNecesarios && numAnimales != 0 ) {
+        if (comidaDiaria < kgNecesarios && numAnimales != 0 && kilosPorAnimal != 0 && comidaDiaria != 0) {
 
             System.out.printf("La comida comprada no alcanza, la racion que le toca a cada animal es de : %.2f  kg", racion);
 
@@ -34,7 +34,7 @@ public class E03_Granja {
 
         } else {
 
-            System.out.println("No se puede dividir entre 0");
+            System.out.println("No se admite 0 como dato");
 
         }
 
