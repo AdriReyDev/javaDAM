@@ -1,5 +1,6 @@
 package ejerciciosClase;
-
+/*1. Crear un programa para aprender a contar, que pedirá un número n y mostrará todos los
+números del 1 a n.*/
 import java.util.Scanner;
 public class F01_aprenderContar {
     

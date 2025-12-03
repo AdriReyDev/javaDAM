@@ -12,8 +12,7 @@ public class F02_multiplos7Menores100 {
             System.out.println(i);
             
         }
-        
-        
+   
     }
     
 }
