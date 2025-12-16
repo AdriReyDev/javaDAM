@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ejerciciosClase;
+
+import java.util.Scanner;
+
+public class RE_01_maximo {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Introduce el primer numero");
+
+        int numb1 = sc.nextInt();
+
+        System.out.println("Introduce el segundo numero");
+
+        int numb2 = sc.nextInt();
+
+        System.out.println("El numero mayor es: " + maximo(numb1, numb2));
+       
+
+    }
+
+    static int maximo(int m1, int m2) {
+        
+        int max;
+        
+        if (m1 < m2) {
+
+            max = m2;
+
+        } else {
+
+            max = m1;
+
+        }
+        return max;
+    }
+}
