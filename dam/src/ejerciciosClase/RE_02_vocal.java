@@ -12,35 +12,41 @@ public class RE_02_vocal {
 
         Scanner sc = new Scanner(System.in);
 
-      
+        String newVocal;
 
-        System.out.println("Introduce una letra para saber si es una vocal: ");
+        do {
 
-        String newVocal = sc.next();
-        
-        
-        
-       if( vocal(newVocal)){
-       
-           System.out.println("El parametro corresponde con una vocal.");
-       
-       }else{
-       
-           System.out.println("El parametro no corresponde con una vocal.");
-           
-       }
-  
+            System.out.println("Introduce una letra para saber si es una vocal: ");
+
+            newVocal = sc.next();
+
+            if (vocal(newVocal)) {
+
+                System.out.println("El parametro corresponde con una vocal.");
+
+            } else if (newVocal.length() > 1) {
+
+                System.out.println("Has metido más de un parámetro ");
+
+            } else {
+
+                System.out.println("El parametro no corresponde con una vocal ");
+
+            }
+
+        } while (!vocal(newVocal));
+
     }
-static boolean vocal(String letraVocal){
-    
-String vocal = "aeiou";
-       
-   boolean  respuesta = vocal.contains(letraVocal);
-     
+
+    static boolean vocal(String letraVocal) {
+
+        letraVocal = letraVocal.toLowerCase();
+
+        String vocal = "aeiou";
+
+        boolean respuesta = vocal.contains(letraVocal);
+
         return respuesta;
     }
-    
+
 }
-
-
-
