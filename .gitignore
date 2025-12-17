@@ -1,0 +1,15 @@
+# NetBeans / Ant
+**/build/
+**/dist/
+**/nbproject/private/
+
+# IDEs
+**/.idea/
+**/*.iml
+
+# Otros artefactos comunes
+**/out/
+*.class
+
+# (Regla anterior específica)
+/cursoJavaMouredev/build/
