@@ -11,21 +11,20 @@ public class RE_02_vocal {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        
+
         String newVocal;
 
         do {
 
             System.out.println("Introduce una letra para saber si es una vocal: ");
 
-             newVocal = sc.next();
+            newVocal = sc.next();
 
-            if (vocal(newVocal) && newVocal.length() < 1) {
+            if (vocal(newVocal) && newVocal.length() == 1) {
 
                 System.out.println("El parametro corresponde con una vocal.");
 
-            } 
-            else {
+            } else {
 
                 System.out.println("El parametro no corresponde con una vocal  o has introducido mas de un caracter");
 
